@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET Header Json. */
 router.get('/', function(req, res, next){
-	res.json(JSON.stringify(req.headers)); 
+	res.send('respond with a resource');
 });
 
 module.exports = router;
