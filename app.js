@@ -9,6 +9,12 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var header = require('./routes/header');
 
+var config = { 
+                host : ['http://root:anoushka@192.168.56.103:5601/']
+              }
+
+var appmetrics = require("appmetrics-elk").monitor(config);
+
 var app = express();
 
 // view engine setup
