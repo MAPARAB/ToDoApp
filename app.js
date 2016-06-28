@@ -10,7 +10,7 @@ var users = require('./routes/users');
 var header = require('./routes/header');
 
 var config = { 
-                host : ['http://root:anoushka@192.168.56.103:5601/']
+                host : ['http://root:anoushka@192.168.56.103:9200/']
               }
 
 var appmetrics = require("appmetrics-elk").monitor(config);
